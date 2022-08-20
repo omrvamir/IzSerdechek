@@ -13,7 +13,7 @@ public class Main {
                 String customer = input.nextLine();    // ввод имени заказчика
                 System.out.print("Ссылка: ");    // запрос ссылка заказчика
                 String link = input.nextLine();    // ввод ссылки заказчика
-                System.out.print("Текст: ");    // запрос заказанный текст
+                System.out.print("Текст (допустимые значения: русские буквы (А - Я)): ");    // запрос заказанный текст
                 text = input.nextLine();    // ввод заказанного текста
                 Letters.info(customer, link, text);
                 break;
@@ -135,6 +135,9 @@ public class Main {
                     break;
                 case 'я':
                     Letters.ya();
+                    break;
+                default:
+                    System.out.println("Недопустимое значение. Допускаются только русские буквы (А - Я).")
                     break;
             }
         }
