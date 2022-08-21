@@ -137,7 +137,7 @@ public class Main {
                     Letters.ya();
                     break;
                 default:
-                    System.out.println("Недопустимое значение. Допускаются только русские буквы (А - Я).")
+                    System.out.println("Недопустимое значение. Допускаются только русские буквы (А - Я).");
                     break;
             }
         }
